@@ -1,17 +1,88 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-ul {
-    font-family: monospace;
+a, a.visited {
+    text-decoration: none;
+    color: unset;
 }
 
-li {
-    list-style: circle;
+.content {
+    min-height: calc(100vh - 30px);
+}
+
+header {
+    background-color: darkslategray;
+}
+
+h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 65px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 25px;
+}
+
+.topMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+.topMenuBtn {
+    text-align: center;
+    font-weight: bold;
+    color: darkslategray;
+    width: 120px;
+    padding: 5px 10px;
+    margin: 0 6px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: lightgray;
+}
+
+.spaceUnderHeader {
+    height: 40px;
+}
+
+.partContainer {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.paragraphBox {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 20px;
+    border: 2px solid darkslategray;
+    background-color: rgb(230, 230, 230);
+}
+
+#photo {
+    padding: 40px;
+    border-radius: 75px;
 }
 
 #introduction {
-    font-size: 12px;
-    font-style: italic;
-    font-weight: bold;
+    max-width: 700px;
+    padding-right: 40px;
+}
+
+footer {
+    font-size: small;
+    color: white;
+    background-color: darkslategray;
+    padding: 3px 12px;
 }

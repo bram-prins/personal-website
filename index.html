@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css?family=Cookie&display=swap">
 </head>
+
 <body>
-    <h1>Welcome</h1>
-    <p id="introduction"></p>
-    <ul>
-        <li class="list">Edit the head</li>
-        <li class="list">Edit the body</li>
-        <li>Link to JavaScript</li>
-    </ul>
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+    <div class="content">
+        <header>
+            <h1><a href=index.html>Bram Prins</a></h1>
+            <nav>
+                <ul class="topMenu">
+                    <li class="topMenuBtn" id="home" style="background-color: white;">
+                        <a href=index.html>🏠 Home</a></li>
+                    <li class="topMenuBtn" id="myWork"><a href=pages/mywork.html>My Work</a></li>
+                    <li class="topMenuBtn" id="ontact"><a href=pages/contact.html>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="spaceUnderHeader"></div>
+        <div class="partContainer">
+            <div class="paragraphBox">
+                <img id="photo" src="resources/profilePic.png" alt="Failed to load picture">
+                <p id="introduction">
+                    <strong>About Me</strong>
+                    <br><br>
+                    <em>TalentClass Professional </em>@ 
+                    <a href="https://www.qquest.nl/" style="text-decoration: underline;" target="_blank">Qquest</a>
+                    <br><br>
+                    Hello and welcome to my website! <br>
+                    Since starting off with developing, I've been enjoying it a lot 
+                    and grown more and more passionate about it. My training started 
+                    out with Java, with which I've worked on the development of a 
+                    digital scrumboard application. Since then I've been learning to 
+                    work with Linux, Salesforce, and most of all JavaScript, along 
+                    with HTML and CSS to develop websites such as this one.
+                </p>
+            </div>
+        </div>
+
+        <div class="partContainer">
+            <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
+                <img src="resources/linkedIn.png" alt=""></a>
+        </div> 
+    </div>
+    <footer>© 2020 - Bram Prins</footer>    
 </body>
 </html>
