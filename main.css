@@ -41,7 +41,8 @@ h1 {
     font-weight: bold;
     color: darkslategray;
     width: 120px;
-    padding: 5px 10px;
+    padding: 5px;
+    padding-top: 8px;
     margin: 0 6px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -49,7 +50,7 @@ h1 {
 }
 
 .spaceUnderHeader {
-    height: 40px;
+    height: 20px;
 }
 
 .partContainer {
@@ -66,13 +67,18 @@ h1 {
     align-items: center;
     max-width: fit-content;
     margin: 20px;
-    border: 2px solid darkslategray;
+    border-radius: 20px;
+    border-top: 3px solid darkslategray;
     background-color: rgb(230, 230, 230);
 }
 
 #photo {
     padding: 40px;
-    border-radius: 75px;
+}
+
+#homepageParagraphText {
+    display: flex;
+    flex-direction: column;
 }
 
 #introduction {
