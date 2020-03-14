@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-    <script src="app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +27,19 @@
         <div class="spaceUnderHeader"></div>
         <div class="partContainer">
             <div class="paragraphBox">
-                <img id="photo" src="resources/img1.jpg" alt="Failed to load picture">
+                <div id="imageSlider">
+                    <div id="imgCnt1" class="imageContainer">
+                        <img src="resources/img1.jpg" alt="Failed to load picture">
+                        <img src="resources/img2.jpg" alt="Failed to load picture">
+                        <img src="resources/img4.jpg" alt="Failed to load picture">
+                    </div>
+                    <div id="sliderBtnContainer">
+                        <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
+                        <button id="sliderBtn1" onclick="goTo(1)"></button>
+                        <button id="sliderBtn2" onclick="goTo(2)"></button>
+                    </div>
+                </div>
+
                 <div id="homepageParagraphText">
                     <h3>About Me</h3>
                     <p id="introduction">
@@ -54,7 +63,13 @@
             <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
                 <img src="resources/linkedIn.png" alt=""></a>
         </div> 
+
     </div>
-    <footer>© 2020 - Bram Prins</footer>    
+    <footer>© 2020 - Bram Prins</footer>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+
 </body>
 </html>
