@@ -6,65 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" 
-    href="https://fonts.googleapis.com/css?family=Cookie&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="content">
         <header>
             <h1><a href=index.html>Bram Prins</a></h1>
+
             <nav>
                 <ul class="topMenu">
-                    <li class="topMenuBtn" id="home" style="background-color: white;">
-                        <a href=index.html>Home</a></li>
-                    <li class="topMenuBtn" id="myWork"><a href=pages/mywork.html>My Work</a></li>
-                    <li class="topMenuBtn" id="ontact"><a href=pages/contact.html>Contact</a></li>
+                    <li class="active" id="home"><a href=index.html>H O M E</a></li>
+                    <li id="myWork"><a href=pages/mywork.html>M Y &nbsp&nbspW O R K</a></li>
+                    <li id="ontact"><a href=pages/contact.html>C O N T A C T</a></li>
                 </ul>
             </nav>
+
         </header>
         
         <div class="spaceUnderHeader"></div>
+
         <div class="partContainer">
             <div class="paragraphBox">
-                <div id="imageSlider">
-                    <div id="imgCnt1" class="imageContainer">
-                        <img src="resources/img1.jpg" alt="Failed to load picture">
-                        <img src="resources/img2.jpg" alt="Failed to load picture">
-                        <img src="resources/img4.jpg" alt="Failed to load picture">
-                    </div>
-                    <div id="sliderBtnContainer">
-                        <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
-                        <button id="sliderBtn1" onclick="goTo(1)"></button>
-                        <button id="sliderBtn2" onclick="goTo(2)"></button>
-                    </div>
-                </div>
+                <h2 class=paragraphTitle>About Me</h2>
 
-                <div id="homepageParagraphText">
-                    <h3>About Me</h3>
+                <div class=paragraphContent>
+                    <div id="imageSlider">
+                        <div id="imgCnt1" class="imageContainer">
+                            <img src="resources/img1.jpg" alt="Failed to load picture">
+                            <img src="resources/img2.jpg" alt="Failed to load picture">
+                            <img src="resources/img3.jpg" alt="Failed to load picture">
+                        </div>
+                        <div id="sliderBtnContainer">
+                            <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
+                            <button id="sliderBtn1" onclick="goTo(1)"></button>
+                            <button id="sliderBtn2" onclick="goTo(2)"></button>
+                        </div>
+                    </div>
+                    
                     <p id="introduction">
                         <em>TalentClass Professional </em>@ 
                         <a href="https://www.qquest.nl/" style="color:royalblue;" target="_blank">Qquest</a>
                         <br><br>
                         Hello and welcome to my website! <br>
                         Since I first came in touch with development during my IT-traineeship,
-                        I've been enjoying it a lot and grown more and more passionate about it.
-                        My training started out with Java, with which I've worked on the 
-                        development of a digital scrumboard application. Since then I've been 
-                        learning to work with JavaScript, along with HTML and CSS to develop 
-                        websites such as this one. I've also familiarized myself with useful
-                        tools such as Linux.
+                        I've been enjoying it a lot and have grown more and more passionate about
+                        it. My training started out with Java, with which I've worked on the 
+                        development of a digital scrumboard application. Since then I've started 
+                        learning JavaScript, along with HTML and CSS to develop websites such as 
+                        this one.
                     </p>
+                    
                 </div>
             </div>
         </div>
 
         <div class="partContainer">
             <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
-                <img src="resources/linkedIn.png" alt=""></a>
+                <img src="resources/linkedIn.png" alt="" class="mediaLinkButton"></a>
+            <a href="https://gitlab.com/Bram_Prins" target="_blank">
+                <img src="resources/gitlab.png" alt="" class="mediaLinkButton"></a>
         </div> 
 
+        <div class="contentEnd"></div>
     </div>
+
     <footer>© 2020 - Bram Prins</footer>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
