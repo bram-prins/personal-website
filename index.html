@@ -44,28 +44,66 @@
                         </div>
                     </div>
                     
-                    <p id="introduction">
-                        <em>TalentClass Professional </em>@ 
-                        <a href="https://www.qquest.nl/" style="color:royalblue;" target="_blank">Qquest</a>
-                        <br><br>
-                        Hello and welcome to my website! <br>
-                        Since I first came in touch with development during my IT-traineeship,
-                        I've been enjoying it a lot and have grown more and more passionate about
-                        it. My training started out with Java, with which I've worked on the 
-                        development of a digital scrumboard application. Since then I've started 
-                        learning JavaScript, along with HTML and CSS to develop websites such as 
-                        this one.
-                    </p>
-                    
+                    <div id ="introduction">
+                        <p id="introductionText">
+                            Hello, and welcome to my website! 
+                            <br><br> 
+                            My name is Bram, I'm <span id="age"></span> years old and I live in Gouda, 
+                            the Netherlands. I currently work as a trainee in IT at 
+                            <a href="https://www.qquest.nl/" target="_blank" class="linkInText">Qquest</a>.
+                            When I first came in touch with development during my traineeship, it was so 
+                            much fun that I was hooked right away. Since then, I've only grown more 
+                            passionate about it, and have decided that this is what I want to pursue in 
+                            my career. 
+                            <br><br>
+                            My development training started out with Java, with which I've 
+                            worked on the development of a digital scrumboard application. Since then, 
+                            I've started learning JavaScript, along with HTML and CSS to develop 
+                            websites such as this one. Other stack I'm familiar with include Git, Linux,
+                            MySQL and Salesforce.
+                        </p>
+
+                        <div id="stackLogos">
+                            <div class="stackLogo">
+                                <img src="resources/java.png" alt=""><span class="tooltipText">Java</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/javascript.png" alt=""><span class="tooltipText">JavaScript</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/html5.png" alt=""><span class="tooltipText">HTML5</HTML:5></span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/css3.png" alt=""><span class="tooltipText">CSS3</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/git.png" alt=""><span class="tooltipText">Git</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/linux.png" alt=""><span class="tooltipText">Linux</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/mysql.png" alt=""><span class="tooltipText">MySQL</span>
+                            </div>
+                            <div class="stackLogo">
+                                <img src="resources/salesforce.png" alt=""><span class="tooltipText">Salesforce</span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="partContainer">
-            <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
-                <img src="resources/linkedIn.png" alt="" class="mediaLinkButton"></a>
-            <a href="https://gitlab.com/Bram_Prins" target="_blank">
-                <img src="resources/gitlab.png" alt="" class="mediaLinkButton"></a>
+            <div class="mediaLinkButton">
+                <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
+                    <img src="resources/linkedIn.png" alt=""></a>
+            </div>
+            <div class="mediaLinkButton">
+                <a href="https://gitlab.com/Bram_Prins" target="_blank">
+                    <img src="resources/gitlab.png" alt=""></a>
+            </div>
         </div> 
 
         <div class="contentEnd"></div>
@@ -73,8 +111,7 @@
 
     <footer>© 2020 - Bram Prins</footer>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="index.js"></script>
     <noscript>You need to enable JavaScript to view the full site.</noscript>
 
 </body>

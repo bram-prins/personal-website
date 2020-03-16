@@ -10,6 +10,14 @@ a, a.visited {
     color: unset;
 }
 
+.linkInText {
+    color: royalblue;
+}
+
+.linkInText:hover {
+    filter: brightness(75%);
+}
+
 button {
     outline: none;
 }
@@ -24,7 +32,7 @@ header {
 
 h1 {
     font-family: 'Cookie', cursive;
-    font-size: 55px;
+    font-size: 65px;
     font-weight: normal;
     color: rgb(242, 242, 242);
     text-align: center;
@@ -47,7 +55,7 @@ h1 {
     font-size: 12px;
     color: white;
     width: 100px;
-    padding: 8px;
+    padding: 12px 8px 9px 8px;
     margin: 0 10px;
 }
 
@@ -57,7 +65,7 @@ h1 {
 }
 
 .spaceUnderHeader {
-    height: 75px;
+    height: 55px;
 }
 
 .partContainer {
@@ -74,7 +82,7 @@ h1 {
 }
 
 .paragraphTitle {
-    padding: 35px;
+    padding: 28px 35px 25px 35px;
     text-align: center;
 }
 
@@ -88,7 +96,6 @@ h2 {
 
 .paragraphContent {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 35px;
     border-top: 4px solid darkslategray;
@@ -106,6 +113,7 @@ h2 {
 }
 
 .imageContainer {
+    min-width: 900px;
     display: flex;
     transition: transform 0.6s;
 }
@@ -138,12 +146,58 @@ h2 {
 }
 
 #introduction {
-    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+#introductionText {
+    margin: 0;
+    padding: 0;
+    min-width: 220px;
     max-width: 600px;
 }
 
-.mediaLinkButton {
-    margin: 0 5px;
+#stackLogos {
+    padding: 35px 20px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#stackLogos .stackLogo img {
+    height: 35px;
+    margin: 7px 7px;
+}
+
+.stackLogo {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltipText {
+    visibility: hidden;
+    background-color: darkslategray;
+    color: white;
+    padding: 4px 6px 6px 6px;
+    box-shadow: 2px 2px 2px grey;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 30%;
+}
+
+.stackLogo:hover .tooltipText {
+    visibility: visible;
+}
+
+.mediaLinkButton img {
+    height: 35px;
+    margin: 0 7px;
+}
+
+.mediaLinkButton:hover {
+    filter: brightness(85%);
 }
 
 footer {
@@ -157,4 +211,20 @@ footer {
 
 .contentEnd {
     height: 1px;
+}
+
+@media screen and (max-width: 753px) {
+    .paragraphContent {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #imageSlider {
+        margin-right: 0;
+    }
+
+    #introduction {
+        max-width: 300px;
+        padding-top: 35px;
+    }
 }

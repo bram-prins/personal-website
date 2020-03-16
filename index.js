@@ -1,5 +1,8 @@
 'use strict'
 
+let age = ((new Date() - new Date("18 February 1996")) / 31536000000).toFixed(0);
+document.getElementById('age').innerHTML = age
+
 const slider = document.getElementById('imgCnt1')
 let img = 1
 
