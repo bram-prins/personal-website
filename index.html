@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
-    <link rel="stylesheet" href="main.css">
+    <link href="main.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
@@ -16,86 +16,84 @@
 
             <nav>
                 <ul class="topMenu">
-                    <li class="active" id="home"><a href=index.html>H O M E</a></li>
+                    <li id="home" class="active"><a href=index.html>H O M E</a></li>
                     <li id="myWork"><a href=pages/mywork.html>M Y &nbsp&nbspW O R K</a></li>
-                    <li id="ontact"><a href=pages/contact.html>C O N T A C T</a></li>
+                    <li id="contact"><a href=pages/contact.html>C O N T A C T</a></li>
                 </ul>
             </nav>
 
         </header>
         
-        <div class="spaceUnderHeader"></div>
+        <div class="largeSpace"></div>
 
-        <div class="partContainer">
-            <div class="paragraphBox">
-                <h2 class=paragraphTitle>About Me</h2>
+        <div class="paragraphBox">
+            <h3 class=paragraphTitle>About Me</h3>
 
-                <div class=paragraphContent>
-                    <div id="imageSlider">
-                        <div id="imgCnt1" class="imageContainer">
-                            <img src="resources/img1.jpg" alt="Failed to load picture">
-                            <img src="resources/img2.jpg" alt="Failed to load picture">
-                            <img src="resources/img3.jpg" alt="Failed to load picture">
-                        </div>
-                        <div id="sliderBtnContainer">
-                            <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
-                            <button id="sliderBtn1" onclick="goTo(1)"></button>
-                            <button id="sliderBtn2" onclick="goTo(2)"></button>
-                        </div>
+            <div id="homepageParagraphContent" class=paragraphContent>
+                <div id="imageSlider">
+                    <div id="imgCnt1" class="imageContainer">
+                        <img src="resources/img1.jpg" alt="Failed to load picture">
+                        <img src="resources/img2.jpg" alt="Failed to load picture">
+                        <img src="resources/img3.jpg" alt="Failed to load picture">
                     </div>
-                    
-                    <div id ="introduction">
-                        <p id="introductionText">
-                            Hello, and welcome to my website! 
-                            <br><br> 
-                            My name is Bram, I'm <span id="age"></span> years old and I live in Gouda, 
-                            the Netherlands. I currently work as a trainee in IT at 
-                            <a href="https://www.qquest.nl/" target="_blank" class="linkInText">Qquest</a>.
-                            When I first came in touch with development during my traineeship, it was so 
-                            much fun that I was hooked right away. Since then, I've only grown more 
-                            passionate about it, and have decided that this is what I want to pursue in 
-                            my career. 
-                            <br><br>
-                            My development training started out with Java, with which I've 
-                            worked on the development of a digital scrumboard application. Since then, 
-                            I've started learning JavaScript, along with HTML and CSS to develop 
-                            websites such as this one. Other stack I'm familiar with include Git, Linux,
-                            MySQL and Salesforce.
-                        </p>
+                    <div id="sliderBtnContainer">
+                        <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
+                        <button id="sliderBtn1" onclick="goTo(1)"></button>
+                        <button id="sliderBtn2" onclick="goTo(2)"></button>
+                    </div>
+                </div>
+                
+                <div id="introductionPart" class="part">
+                    <p id="introduction">
+                        Hello, and welcome to my website! 
+                        <br><br> 
+                        My name is Bram, I'm <span id="age"></span> years old and I live in Gouda, 
+                        the Netherlands. I currently work as a trainee in IT at 
+                        <a href="https://www.qquest.nl/" target="_blank" class="linkInText">Qquest</a>.
+                        When I first came in touch with development during my traineeship, it was so 
+                        much fun that I was hooked right away. Since then, I've only grown more 
+                        passionate about it, and have decided that this is what I want to pursue in 
+                        my career. 
+                        <br><br>
+                        My development training started out with Java, with which I've 
+                        worked on the development of a digital scrumboard application. Since then, 
+                        I've started learning JavaScript, along with HTML and CSS to develop 
+                        websites such as this one. Other stack I've worked with include Git, Linux,
+                        MySQL and Salesforce.
+                    </p>
 
-                        <div id="stackLogos">
-                            <div class="stackLogo">
-                                <img src="resources/java.png" alt=""><span class="tooltipText">Java</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/javascript.png" alt=""><span class="tooltipText">JavaScript</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/html5.png" alt=""><span class="tooltipText">HTML5</HTML:5></span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/css3.png" alt=""><span class="tooltipText">CSS3</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/git.png" alt=""><span class="tooltipText">Git</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/linux.png" alt=""><span class="tooltipText">Linux</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/mysql.png" alt=""><span class="tooltipText">MySQL</span>
-                            </div>
-                            <div class="stackLogo">
-                                <img src="resources/salesforce.png" alt=""><span class="tooltipText">Salesforce</span>
-                            </div>
-
+                    <div id="stackLogos">
+                        <div class="stackLogo">
+                            <img src="resources/java.png" alt=""><span class="tooltipText">Java</span>
                         </div>
+                        <div class="stackLogo">
+                            <img src="resources/javascript.png" alt=""><span class="tooltipText">JavaScript</span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/html5.png" alt=""><span class="tooltipText">HTML5</HTML:5></span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/css3.png" alt=""><span class="tooltipText">CSS3</span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/git.png" alt=""><span class="tooltipText">Git</span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/linux.png" alt=""><span class="tooltipText">Linux</span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/mysql.png" alt=""><span class="tooltipText">MySQL</span>
+                        </div>
+                        <div class="stackLogo">
+                            <img src="resources/salesforce.png" alt=""><span class="tooltipText">Salesforce</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="partContainer">
+        <div class="otherPagePart">
             <div class="mediaLinkButton">
                 <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
                     <img src="resources/linkedIn.png" alt=""></a>

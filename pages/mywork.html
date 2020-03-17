@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-    <script src="../app.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" 
-    href="https://fonts.googleapis.com/css?family=Cookie&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="content">
         <header>
             <h1><a href=../index.html>Bram Prins</a></h1>
+
             <nav>
                 <ul class="topMenu">
-                    <li class="topMenuBtn" id="home"><a href=../index.html>Home</a></li>
-                    <li class="topMenuBtn" id="myWork" style="background-color: white;">
-                        <a href=mywork.html>My Work</a></li>
-                    <li class="topMenuBtn" id="contact"><a href=contact.html>Contact</a></li>
+                    <li id="home"><a href=../index.html>H O M E</a></li>
+                    <li id="myWork" class="active"><a href=mywork.html>M Y &nbsp&nbspW O R K</a></li>
+                    <li id="contact"><a href=contact.html>C O N T A C T</a></li>
                 </ul>
             </nav>
+
         </header>
         
-        <div class="spaceUnderHeader"></div>
-        <div class="partContainer">In Progress</div>
+        <div class="largeSpace"></div>
+                      
+        <div class="h2Container">
+            <div class="triangleRight"></div>
+            <img src="../resources/DevelopmentProjects.png" alt="" class="h2Icon">  
+            <h2>Development Projects</h2>  
+        </div>
+
+            <div class="multipleParagraphs">
+                <div class="paragraphBox">
+                    <h3 class=paragraphTitle>DrumDevotion Website</h3>
+
+                    <div class=paragraphContent>
+                        <p class="pMultipleParagraphs">
+                            I am currently working on a website for a drumming course that I wrote a while ago.
+                            <br>
+                            It will show what the course is all about, and make it downloadable for free.
+                        </p>
+                        <div class="previewUnavailable">Preview Unavailable</div>
+                    </div>
+                </div>
+
+                <div class="paragraphBox">
+                    <h3 class=paragraphTitle>Marecipe App</h3>
+
+                    <div class=paragraphContent>
+                        <p id="emptyParagraph" class="pMultipleParagraphs"></p> 
+                    </div>
+                </div>
+            </div>
+
+        <div class="h2Container">
+            <div class="triangleRight"></div>
+            <img src="../resources/Others.png" alt="" class="h2Icon">  
+            <h2>Others</h2>  
+        </div>
+
+            <div class="multipleParagraphs">
+                <div class="paragraphBox">
+                    <h3 class=paragraphTitle>Studies</h3>
+
+                    <div class=paragraphContent>
+                        <p class="pMultipleParagraphs">
+                            <strong>MSc Marketing</strong><br>
+                            VU University Amsterdam <br>
+                            <br>
+                            During my master Marketing I've learned a lot about businesses and how they function. 
+                            Marketing is a broad field with many different aspects, ranging from market positioning, 
+                            to innovation, to customer satisfaction. I've learned about the role of many of these 
+                            different aspects, in how a bussiness can flourish. The thesis I wrote is about how to 
+                            best motivate people to consume sustainably. <br>
+                            <br>
+                            <strong>Ba Communication- & Information Sciences</strong><br>
+                            VU University Amsterdam <br>
+                            <br>
+                            My bachelor program Communication- and Information Sciences taught me a great deal about 
+                            all kinds of different subjects relating to language, communication, and media. I've 
+                            followed a lot of courses about journalism, advertising, and other forms of communication. 
+                            The thesis I wrote is about news-worthy commenting by bussinesses on social media, and how 
+                            to do this successfully.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="paragraphBox">
+                    <div class=paragraphContent>
+                        <div class="part">
+                            <p class="pMultipleParagraphs">In my own time, I also like to play the drums:<br><br></p>
+                            <iframe src="https://www.youtube.com/embed/C8bPGDcvNVQ" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="contentEnd"></div>
     </div>
-    <footer>© 2020 - Bram Prins</footer>    
+
+    <footer>© 2020 - Bram Prins</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+
 </body>
-</html>
+</html>    

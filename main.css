@@ -1,3 +1,5 @@
+/*index.html*/
+
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -24,10 +26,14 @@ button {
 
 .content {
     min-height: calc(100vh - 25px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     background-color: darkslategray;
+    width: 100%;
 }
 
 h1 {
@@ -64,41 +70,101 @@ h1 {
     background-color: rgb(242, 242, 242);
 }
 
-.spaceUnderHeader {
-    height: 55px;
+.largeSpace {
+    height: 50px;
 }
 
-.partContainer {
+h2 {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: darkslategray;
+}
+
+.h2Container {
     display: flex;
-    justify-content: center;
-    margin: 0 35px 40px 35px;
+    align-items: center;
+    height: 100px;
+    width: 1110px;
+    background-color: rgb(242, 242, 242);
+    margin: 15px 0 25px 0;
+    background-image: linear-gradient(to right, rgb(184, 184, 184), rgb(242, 242, 242));
+}
+
+.triangleRight {
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 50px solid rgb(242, 242, 242);
+	border-bottom: 50px solid transparent;
+}
+
+.h2Icon {
+    height: 35px;
+    margin: 0 24px;
 }
 
 .paragraphBox {
     display: flex;
     flex-direction: column;
-    max-width: fit-content;
     background-color: white;
+    max-width: fit-content;
+    margin: 0 35px 40px 35px;
+}
+
+.otherPagePart {
+    display: flex;
+    justify-content: center;
+    margin: 0 35px 40px 35px;
+}
+
+.multipleParagraphs {
+    display: flex;
+    margin: 0 22px 15px 22px;
+}
+
+.multipleParagraphs .paragraphBox {
+    margin: 0 13px 25px 13px;
+}
+
+.spaceBetweenBoxes {
+    width: 35px;
 }
 
 .paragraphTitle {
     padding: 28px 35px 25px 35px;
     text-align: center;
+    border-bottom: 4px solid darkslategray;
 }
 
-h2 {
+h3 {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     font-size: 24px;
     color: darkslategray;
 }
 
+p {
+    margin: 0;
+    align-self: center;
+}
+
 .paragraphContent {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
     padding: 35px;
-    border-top: 4px solid darkslategray;
+}
+
+#homepageParagraphContent {
+    flex-direction: row;
+    align-items: center;
 }
 
 #imageSlider {
@@ -116,6 +182,11 @@ h2 {
     min-width: 900px;
     display: flex;
     transition: transform 0.6s;
+}
+
+.imageContainer img {
+    width: 300px;
+    height: 400px;
 }
 
 #sliderBtnContainer {
@@ -145,14 +216,12 @@ h2 {
     background: hsla(0, 0%, 100%, 1.0);
 }
 
-#introduction {
+.part {
     display: flex;
     flex-direction: column;
 }
 
-#introductionText {
-    margin: 0;
-    padding: 0;
+#introduction {
     min-width: 220px;
     max-width: 600px;
 }
@@ -213,18 +282,70 @@ footer {
     height: 1px;
 }
 
+/*other pages specifics*/
+
+.pMultipleParagraphs {
+    min-width: 220px;
+    max-width: 423px;
+}
+
+.previewUnavailable {
+    margin: 30px 0;
+    text-align: center;
+    color: lightslategray;
+}
+
+iframe, #emptyParagraph {
+    min-width: 220px;
+    width: 423px;
+    height: 212px;
+}
+
+/*media*/
+
+@media screen and (max-width: 1180px) {
+    .h2Container {
+        left: 0;
+        width: calc(100% - 70px);
+    }
+}
+
+@media screen and (max-width: 1082px) {
+    #emptyParagraph, iframe {
+        width: calc(50vw - 118px);
+        height: calc(25vw - 59px);
+    }
+}
+
 @media screen and (max-width: 753px) {
-    .paragraphContent {
+    .paragraphContent, #homepageParagraphContent {
         flex-direction: column;
         justify-content: center;
+    }
+
+    #introductionPart {
+        padding-top: 25px;
+        max-width: 300px;
     }
 
     #imageSlider {
         margin-right: 0;
     }
 
-    #introduction {
-        max-width: 300px;
-        padding-top: 35px;
+    .multipleParagraphs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #emptyParagraph, iframe {
+        width: 423px;
+        height: 212px;
+    }
+}
+
+@media screen and (max-width: 563px) {
+    #emptyParagraph, iframe {
+        width: calc(100vw - 140px);
+        height: calc(50vw - 70px);
     }
 }
