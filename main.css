@@ -322,14 +322,6 @@ iframe {
 }
 
 .contactP {
-    margin-bottom: 10px;
-}
-
-.wIcon {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    line-height: 21px;
     margin-bottom: 30px;
 }
 
@@ -345,7 +337,7 @@ input[type=text], textarea {
     border: 1px solid darkslategray;
 }
 
-#cfMessage {
+textarea {
     height: 150px;
     resize: vertical;
     margin-bottom: 0;
