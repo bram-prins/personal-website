@@ -9,7 +9,7 @@ let img = 1
 let timer = setInterval(slideImgs, 4000)
 
 function slideImgs() {
-    slider.style.transform = 'translateX(' + (-300 * img) + 'px)'
+    slider.style.transform = 'translateX(' + (-288 * img) + 'px)'
 
     for (let a of document.getElementById('sliderBtnContainer').querySelectorAll('.active')) {
         a.className = ''
@@ -26,7 +26,7 @@ function slideImgs() {
 function goTo(toImg) {
     clearInterval(timer)
 
-    slider.style.transform = 'translateX(' + (-300 * toImg) + 'px)'
+    slider.style.transform = 'translateX(' + (-288 * toImg) + 'px)'
 
     for (let a of document.getElementById('sliderBtnContainer').querySelectorAll('.active')) {
         a.className = ''

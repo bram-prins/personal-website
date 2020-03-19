@@ -1,4 +1,4 @@
-/*index.html*/
+/*General*/
 
 body {
     font-family: 'Lato', sans-serif;
@@ -60,8 +60,7 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     color: white;
-    width: 100px;
-    padding: 12px 8px 9px 8px;
+    padding: 12px 20px 9px 20px;
     margin: 0 10px;
 }
 
@@ -70,41 +69,8 @@ h1 {
     background-color: rgb(242, 242, 242);
 }
 
-.largeSpace {
+.spaceUnderHeader {
     height: 50px;
-}
-
-h2 {
-    padding: 0;
-    padding-bottom: 5px;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
-    font-weight: bold;
-    color: darkslategray;
-}
-
-.h2Container {
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 1110px;
-    background-color: rgb(242, 242, 242);
-    margin: 15px 0 25px 0;
-    background-image: linear-gradient(to right, rgb(184, 184, 184), rgb(242, 242, 242));
-}
-
-.triangleRight {
-    width: 0;
-	height: 0;
-	border-top: 50px solid transparent;
-	border-left: 50px solid rgb(242, 242, 242);
-	border-bottom: 50px solid transparent;
-}
-
-.h2Icon {
-    height: 35px;
-    margin: 0 24px;
 }
 
 .paragraphBox {
@@ -130,10 +96,6 @@ h2 {
     margin: 0 13px 25px 13px;
 }
 
-.spaceBetweenBoxes {
-    width: 35px;
-}
-
 .paragraphTitle {
     padding: 28px 35px 25px 35px;
     text-align: center;
@@ -151,16 +113,46 @@ h3 {
 
 p {
     margin: 0;
-    align-self: center;
+}
+
+.smallParagraph, .contactP {
+    text-align: center;
 }
 
 .paragraphContent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100%;
     padding: 35px;
 }
+
+.partColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.partRow {
+    display: flex;
+}
+
+footer {
+    height: 25px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: darkslategray;
+}
+
+.contentEnd {
+    height: 1px;
+}
+
+
+
+
+
+/*homepage stuff*/
 
 #homepageParagraphContent {
     flex-direction: row;
@@ -168,9 +160,9 @@ p {
 }
 
 #imageSlider {
-    width: 300px;
-    min-width: 300px;
-    height: 400px;
+    width: 288px;
+    min-width: 288px;
+    height: 384px;
     border-radius: 9px;
     margin-right: 40px;
     overflow: hidden;
@@ -179,14 +171,14 @@ p {
 }
 
 .imageContainer {
-    min-width: 900px;
+    min-width: 864px;
     display: flex;
     transition: transform 0.6s;
 }
 
 .imageContainer img {
-    width: 300px;
-    height: 400px;
+    width: 288px;
+    height: 384px;
 }
 
 #sliderBtnContainer {
@@ -216,13 +208,9 @@ p {
     background: hsla(0, 0%, 100%, 1.0);
 }
 
-.part {
-    display: flex;
-    flex-direction: column;
-}
-
 #introduction {
-    min-width: 220px;
+    padding-top: 25px;
+    min-width: 288px;
     max-width: 600px;
 }
 
@@ -230,7 +218,6 @@ p {
     padding: 35px 20px 0 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -269,55 +256,138 @@ p {
     filter: brightness(85%);
 }
 
-footer {
-    height: 25px;
-    box-sizing: border-box;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: white;
-    background-color: darkslategray;
+
+
+
+
+/*MyWork page stuff*/
+
+h2 {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: darkslategray;
 }
 
-.contentEnd {
-    height: 1px;
+.h2Container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 1060px;
+    background-color: rgb(242, 242, 242);
+    margin: 15px 0 25px 0;
+    background-image: linear-gradient(to right, rgb(184, 184, 184), rgb(242, 242, 242));
 }
 
-/*other pages specifics*/
+.triangleRight {
+    width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 50px solid rgb(242, 242, 242);
+	border-bottom: 50px solid transparent;
+}
+
+.h2Icon {
+    height: 35px;
+    margin: 0 24px;
+}
 
 .pMultipleParagraphs {
-    min-width: 220px;
-    max-width: 423px;
+    min-width: 288px;
+    max-width: 400px;
 }
 
-.previewUnavailable {
-    margin: 30px 0;
-    text-align: center;
-    color: lightslategray;
+iframe {
+    min-width: 288px;
+    width: 400px;
+    height: 200px;
 }
 
-iframe, #emptyParagraph {
-    min-width: 220px;
-    width: 423px;
-    height: 212px;
+#emptyParagraph {
+    color: white;
 }
 
-/*media*/
 
-@media screen and (max-width: 1180px) {
+
+
+
+/*Contact page stuff*/
+
+.smallIcon {
+    height: 20px;
+    align-self: flex-end;
+}
+
+.contactP {
+    margin-bottom: 10px;
+}
+
+.wIcon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+
+form * {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid darkslategray;
+}
+
+#cfMessage {
+    height: 150px;
+    resize: vertical;
+    margin-bottom: 0;
+}
+
+input[type=submit] {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: darkslategray;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit]:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}
+
+
+
+
+
+/*Media - smaller screen-widths*/
+
+@media screen and (max-width: 1110px) {
     .h2Container {
         left: 0;
-        width: calc(100% - 70px);
+        width: calc(100% - 50px);
     }
 }
 
-@media screen and (max-width: 1082px) {
-    #emptyParagraph, iframe {
+@media screen and (max-width: 1035px) {
+    iframe {
         width: calc(50vw - 118px);
         height: calc(25vw - 59px);
     }
 }
 
-@media screen and (max-width: 753px) {
+@media screen and (max-width: 801px) {
     .paragraphContent, #homepageParagraphContent {
         flex-direction: column;
         justify-content: center;
@@ -325,7 +395,8 @@ iframe, #emptyParagraph {
 
     #introductionPart {
         padding-top: 25px;
-        max-width: 300px;
+        min-width: 288px;
+        max-width: 400px;
     }
 
     #imageSlider {
@@ -337,15 +408,67 @@ iframe, #emptyParagraph {
         align-items: center;
     }
 
-    #emptyParagraph, iframe {
-        width: 423px;
-        height: 212px;
+    iframe {
+        width: 400px;
+        height: 200px;
     }
 }
 
 @media screen and (max-width: 563px) {
-    #emptyParagraph, iframe {
+    #smallParagraph {
+        width: calc(100vw - 140px);
+    }
+    
+    iframe {
         width: calc(100vw - 140px);
         height: calc(50vw - 70px);
+    }
+}
+
+
+
+
+/*mobile view*/
+@media screen and (max-width: 481px) {
+    .topMenu li {
+        padding: 12px 14px 9px 14px;
+        margin: 0 1px;
+    }
+
+    .paragraphBox {
+        max-width: 310px;
+    }
+
+    .paragraphContent {
+        padding: 35px 11px;
+    }
+
+    #stackLogos, p, h2 {
+        max-width: 288px;
+    }
+
+    .multipleParagraphs {
+        margin: 0;    
+    }
+
+    .paragraphBox, .otherPagePart {
+        margin: 0 5px 40px 5px;
+    }
+
+    .multipleParagraphs .paragraphBox {
+        margin: 0 5px 40px 5px;
+    }
+
+    .h2Container {
+        width: 100%;
+    }
+
+    .triangleRight {
+        display: none;
+    }
+
+    iframe {
+        width: 288px;
+        height: 144px;
     }
 }

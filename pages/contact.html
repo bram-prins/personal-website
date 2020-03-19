@@ -17,23 +17,39 @@
             <nav>
                 <ul class="topMenu">
                     <li id="home"><a href=../index.html>H O M E</a></li>
-                    <li id="myWork"><a href=mywork.html>M Y &nbsp&nbspW O R K</a></li>
+                    <li id="myWork"><a href=mywork.html>M Y &nbsp;&nbsp;&nbsp;W O R K</a></li>
                     <li id="contact" class="active" ><a href=contact.html>C O N T A C T</a></li>
                 </ul>
             </nav>
 
         </header>
         
-        <div class="largeSpace"></div>
+        <div class="spaceUnderHeader"></div>
 
-        <div class="partContainer">
-            <div class="paragraphBox">
-                <h3 class=paragraphTitle>Get in touch!</h3>
+        <div class="paragraphBox">
+            <h3 class=paragraphTitle>Get in touch</h3>
 
-                <div class=paragraphContent>
-                </div>
+            <div class=paragraphContent>
+                <p class="contactP"> You can fill in the form below, or mail me at &nbsp;
+                    <a class="linkInText" href="mailto:bramenprins@gmail.com">✉&nbsp;bramenprins@gmail.com</a>
+                </p>
+                
+                <p class="contactP wIcon">
+                    You can also send me a message on &nbsp;&nbsp;
+                    <a class="linkInText" href="https://qquestlabs.slack.com/team/UTL9YQS2V" target="_blank">
+                        <img src="../resources/Slack.png" alt="" class="smallIcon"></a>
+                </p>
+
+                <form action="../contactform.php" method="post">
+                    <input type="text" id="cfName" name="name" placeholder="Your name..">
+                    <input type="text" id="cfEmail" name="email" placeholder="your@email.com">
+                    <textarea id="cfMessage" name="message" placeholder="Your message.."></textarea>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+
             </div>
         </div>
+        
         <div class="contentEnd"></div>
     </div>
 
