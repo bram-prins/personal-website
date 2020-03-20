@@ -322,7 +322,8 @@ iframe {
 }
 
 .contactP {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    min-width: 288px;
 }
 
 form * {
@@ -421,34 +422,26 @@ input[type=submit]:hover {
 
 
 /*mobile view*/
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 461px) {
     .topMenu li {
         padding: 12px 14px 9px 14px;
         margin: 0 1px;
     }
 
-    .paragraphBox {
-        max-width: 310px;
+    .paragraphBox * {
+        max-width: 288px;
     }
 
     .paragraphContent {
-        padding: 35px 11px;
-    }
-
-    #stackLogos, p, h2 {
-        max-width: 288px;
+        padding: 35px calc(25vw - 72px);
     }
 
     .multipleParagraphs {
         margin: 0;    
     }
 
-    .paragraphBox, .otherPagePart {
-        margin: 0 5px 40px 5px;
-    }
-
-    .multipleParagraphs .paragraphBox {
-        margin: 0 5px 40px 5px;
+    .paragraphBox, .multipleParagraphs .paragraphBox, .otherPagePart {
+        margin-bottom: 40px;
     }
 
     .h2Container {

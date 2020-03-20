@@ -11,9 +11,8 @@
         $txt = "You have received an e-mail from $name \n $mailFrom \n\n $message";
         $mailHeader = "From: $email";
 
-        mail($mailTo, $subject, wordwrap($txt,90,"<br>\n",TRUE), $mailHeader);
-        header("Location: ../pages/contact.html");
-        echo "<script> alert("Thank you for your message."); </script>"
+        mail($mailTo, $subject, $txt, $mailHeader);
+        header("Location: contact.html");
     }
 
 ?>
