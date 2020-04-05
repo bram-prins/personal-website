@@ -1,9 +1,13 @@
 /*General*/
 
-body {
-    font-family: 'Lato', sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
     background-color: rgb(242, 242, 242)
 }
 
@@ -25,7 +29,7 @@ button {
 }
 
 .content {
-    min-height: calc(100vh - 25px);
+    min-height: calc(100% - 25px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -115,8 +119,18 @@ p {
     margin: 0;
 }
 
+.pMultipleParagraphs.smallParagraph {
+    width: 400px;
+}
+
+.pMultipleParagraphs iframe {
+    min-width: 288px;
+    width: 100%;
+    height: 200px;
+}
+
 .smallParagraph, .contactP {
-    text-align: center;
+    min-width: 288px;
 }
 
 .paragraphContent {
@@ -155,16 +169,18 @@ footer {
 /*homepage stuff*/
 
 #homepageParagraphContent {
-    flex-direction: row;
-    align-items: center;
+    display: inline-block;
+    min-width: 288px;
+    max-width: 928px;
 }
 
 #imageSlider {
     width: 288px;
     min-width: 288px;
     height: 384px;
+    float: left;
     border-radius: 9px;
-    margin-right: 40px;
+    margin-right: 35px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -209,13 +225,11 @@ footer {
 }
 
 #introduction {
-    padding-top: 25px;
-    min-width: 288px;
-    max-width: 600px;
+    margin-bottom: 30px;
 }
 
 #stackLogos {
-    padding: 35px 20px 0 0;
+    padding-right: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -300,14 +314,8 @@ h2 {
     max-width: 400px;
 }
 
-iframe {
-    min-width: 288px;
-    width: 400px;
-    height: 200px;
-}
-
-#emptyParagraph {
-    color: white;
+#drumParagraph {
+    text-align: center;
 }
 
 
@@ -323,7 +331,6 @@ iframe {
 
 .contactP {
     margin-bottom: 25px;
-    min-width: 288px;
 }
 
 form * {
@@ -374,26 +381,25 @@ input[type=submit]:hover {
 }
 
 @media screen and (max-width: 1035px) {
-    iframe {
+    .pMultipleParagraphs.smallParagraph {
         width: calc(50vw - 118px);
+    }
+
+    .pMultipleParagraphs iframe {
         height: calc(25vw - 59px);
     }
 }
 
+@media screen and (max-width: 890px) {
+    #imageSlider {
+        margin-bottom: 20px;
+    }
+}
+
 @media screen and (max-width: 801px) {
-    .paragraphContent, #homepageParagraphContent {
+    .paragraphContent {
         flex-direction: column;
         justify-content: center;
-    }
-
-    #introductionPart {
-        padding-top: 25px;
-        min-width: 288px;
-        max-width: 400px;
-    }
-
-    #imageSlider {
-        margin-right: 0;
     }
 
     .multipleParagraphs {
@@ -401,19 +407,33 @@ input[type=submit]:hover {
         align-items: center;
     }
 
-    iframe {
+    .pMultipleParagraphs.smallParagraph {
         width: 400px;
+    }
+
+    .pMultipleParagraphs iframe {  
         height: 200px;
     }
 }
 
+@media screen and (max-width: 617px) {
+    #homepageParagraphContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imageSlider {
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 563px) {
-    #smallParagraph {
+    .pMultipleParagraphs.smallParagraph {
         width: calc(100vw - 140px);
     }
-    
-    iframe {
-        width: calc(100vw - 140px);
+
+    .pMultipleParagraphs iframe {
         height: calc(50vw - 70px);
     }
 }
@@ -452,8 +472,11 @@ input[type=submit]:hover {
         display: none;
     }
 
-    iframe {
+    .pMultipleParagraphs.smallParagraph {
         width: 288px;
+    }
+
+    .pMultipleParagraphs iframe {
         height: 144px;
     }
 }
