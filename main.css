@@ -130,13 +130,14 @@ p {
 }
 
 .smallParagraph, .contactP {
+    text-align: center;
     min-width: 288px;
 }
 
 .paragraphContent {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     padding: 35px;
 }
 
@@ -312,10 +313,6 @@ h2 {
 .pMultipleParagraphs {
     min-width: 288px;
     max-width: 400px;
-}
-
-#drumParagraph {
-    text-align: center;
 }
 
 
