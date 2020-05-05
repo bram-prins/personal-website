@@ -30,13 +30,13 @@ const overlay = document.querySelector(".overlay")
 const loadGame = (no) => {
     wind.classList.add('active')
     overlay.classList.add('active')
-    const gTitle = document.getElementById('game-title')
-    const gBody = document.querySelector('.game-body')
+    const title = document.getElementById('game-title')
+    const frame = document.querySelector('.game-body iframe')
 
     switch(no) {
         case 1: 
-            gTitle.innerHTML = 'Memory'
-            gBody.innerHTML = '<object type="text/html" data="src/mywork/games/memory.html"></object>'
+            title.innerHTML = 'Memory'
+            frame.setAttribute('src', 'src/mywork/games/memory.html')
             break
         /*
         case 2: 
@@ -44,7 +44,6 @@ const loadGame = (no) => {
             gBody.innerHTML = '<object type="text/html" data="src/mywork/games/memory.html"></object>'
             break
         */
-        default: break
     }
 }
 

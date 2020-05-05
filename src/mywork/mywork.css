@@ -46,6 +46,12 @@ p iframe {
     height: 200px;
 }
 
+.embed-img {
+    margin-top: 20px;
+    width: 200px;
+    align-self: center;
+}
+
 ul {
     margin-top: 2px;
     padding-left: 20px;
@@ -186,7 +192,7 @@ button.linkInText {
     flex-grow: 100;
 }
 
-.game-body object {
+.game-body iframe {
     width: 100%;
     height: 500px;
     max-height: calc((90vw - 70px) * 1.25); /* 5/4 of the width of the object*/
