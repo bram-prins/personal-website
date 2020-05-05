@@ -8,10 +8,8 @@ const scale = () => {
     } else if (width < 368) {
         scaler(368, 1506)
     } else {
-        content.style.transform = "none"
-        content.style.transformOrigin = "50% 50% 0"
-        content.style.width = "100%"
-        document.body.style.height = "fit-content"
+        content.removeAttribute('style')
+        document.body.removeAttribute('style')
     }
 
     function scaler(contentWidth, contentHeight) {

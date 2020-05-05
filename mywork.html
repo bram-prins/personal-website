@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
+    <link rel="icon" type="image/pmg" href="src/images/favicon.png">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="src/mywork/mywork.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Lato|Montserrat&display=swap" rel="stylesheet">
@@ -57,10 +58,10 @@
                         <a href="https://bramprins-weather-app.herokuapp.com/" target="_blank" class="linkInText">
                             Weather forecast</a>
                         <br><br>
-                        Games: (in progress)<br>
+                        Games:<br>
                         <ul>
-                            <li><button class="linkInText" onclick="loadGame(1)" disabled>Memory</button></li>
-                            <li><button class="linkInText" onclick="loadGame(2)" disabled>Hangman</button></li>
+                            <li><button class="linkInText" onclick="loadGame(1)">Memory</button></li>
+                            <!--<li><button class="linkInText" onclick="loadGame(2)">Hangman</button></li>-->
                         </ul>
                     </p> 
                 </div>
@@ -113,12 +114,22 @@
         </div>
 
         <div class="footerOverlay"></div>
-        
+    
     </div>
 
     <footer>© 2020 - Bram Prins</footer>
 
+    <!--Game-window-->
 
+    <div class="game-window">
+        <div class="game-header">
+            <h3 id="game-title">Memory</h3>
+            <button onclick="closeWin()">&times;</button>
+        </div>
+        <div class="game-body"></div>
+    </div>
+
+    <div class="overlay"></div>
 
     <script src="src/mywork/mywork.js"></script>
 

@@ -7,13 +7,10 @@ const scale = () => {
         content.style.width = 368 + "px"
         content.style.transform = "scale(" + scl + ")"
         content.style.transformOrigin = "left top"
-        console.log(content.offsetHeight)
         document.body.style.height = (843 * scl) + "px"
     } else {
-        content.style.transform = "none"
-        content.style.transformOrigin = "50% 50% 0"
-        content.style.width = "100%"
-        document.body.style.height = "fit-content"
+        content.removeAttribute('style')
+        document.body.removeAttribute('style')
     }
 }
 
