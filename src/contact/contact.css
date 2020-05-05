@@ -1,0 +1,44 @@
+.smallIcon {
+    height: 20px;
+    align-self: flex-end;
+}
+
+.contactP {
+    margin-bottom: 25px;
+    text-align: center;
+    min-width: 288px;
+}
+
+form * {
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid darkslategray;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+    margin-bottom: 0;
+}
+
+input[type=submit] {
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: darkslategray;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=submit]:hover {
+    filter: brightness(85%);
+    cursor: pointer;
+}

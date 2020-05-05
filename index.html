@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link href="main.css" rel="stylesheet">
+    <link href="src/home/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
+
+    <div id="content">
+
         <header>
-            <h1><a href=index.html>Bram Prins</a></h1>
+            <h1><a href='#'>Bram Prins</a></h1>
 
             <nav>
                 <ul class="topMenu">
-                    <li id="home" class="active"><a href=index.html>H O M E</a></li>
-                    <li id="myWork"><a href=mywork.html>M Y &nbsp&nbspW O R K</a></li>
-                    <li id="contact"><a href=contact.html>C O N T A C T</a></li>
+                    <li id="home" class="active"><a href='#'>H O M E</a></li>
+                    <li id="myWork"><a href="mywork">M Y &nbsp&nbspW O R K</a></li>
+                    <li id="contact"><a href="contact">C O N T A C T</a></li>
                 </ul>
             </nav>
 
         </header>
-        
+
         <div class="spaceUnderHeader"></div>
 
         <div class="paragraphBox">
@@ -32,9 +35,9 @@
             <div id="homepageParagraphContent" class=paragraphContent>                
                 <div id="imageSlider">
                     <div id="imgCnt1" class="imageContainer">
-                        <img src="resources/img1.jpg" alt="Failed to load picture">
-                        <img src="resources/img2.jpg" alt="Failed to load picture">
-                        <img src="resources/img3.jpg" alt="Failed to load picture">
+                        <img src="src/images/img1.jpg" alt="Failed to load picture">
+                        <img src="src/images/img2.jpg" alt="Failed to load picture">
+                        <img src="src/images/img3.jpg" alt="Failed to load picture">
                     </div>
                     <div id="sliderBtnContainer">
                         <button id="sliderBtn0" class='active' onclick="goTo(0)"></button>
@@ -46,7 +49,7 @@
                 <p id="introduction">
                     Hello, and welcome to my website! 
                     <br><br> 
-                    My name is Bram, I'm <span id="age"></span> years old and I live in Gouda, 
+                    My name is Bram, I'm <span id="age">24</span> years old and I live in Gouda, 
                     the Netherlands. I currently work as a trainee in IT at 
                     <a href="https://www.qquest.nl/" target="_blank" class="linkInText">Qquest</a>.
                     When I first came in touch with development during my traineeship, it was so 
@@ -64,31 +67,31 @@
 
                 <div id="stackLogos">
                     <div class="stackLogo">
-                        <img src="resources/java.png" alt=""><span class="tooltipText">Java</span>
+                        <img src="src/images/stack-logos/java.png" alt=""><span class="tooltipText">Java</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/javascript.png" alt=""><span class="tooltipText">JavaScript</span>
+                        <img src="src/images/stack-logos/javascript.png" alt=""><span class="tooltipText">JavaScript</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/html5.png" alt=""><span class="tooltipText">HTML5</HTML:5></span>
+                        <img src="src/images/stack-logos/html5.png" alt=""><span class="tooltipText">HTML5</HTML:5></span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/css3.png" alt=""><span class="tooltipText">CSS3</span>
+                        <img src="src/images/stack-logos/css3.png" alt=""><span class="tooltipText">CSS3</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/nodejs.png" alt=""><span class="tooltipText">Node.js</span>
+                        <img src="src/images/stack-logos/nodejs.png" alt=""><span class="tooltipText">Node.js</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/git.png" alt=""><span class="tooltipText">Git</span>
+                        <img src="src/images/stack-logos/git.png" alt=""><span class="tooltipText">Git</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/linux.png" alt=""><span class="tooltipText">Linux</span>
+                        <img src="src/images/stack-logos/linux.png" alt=""><span class="tooltipText">Linux</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/mysql.png" alt=""><span class="tooltipText">MySQL</span>
+                        <img src="src/images/stack-logos/mysql.png" alt=""><span class="tooltipText">MySQL</span>
                     </div>
                     <div class="stackLogo">
-                        <img src="resources/salesforce.png" alt=""><span class="tooltipText">Salesforce</span>
+                        <img src="src/images/stack-logos/salesforce.png" alt=""><span class="tooltipText">Salesforce</span>
                     </div>
                 </div>
                 
@@ -98,21 +101,21 @@
         <div class="otherPagePart">
             <div class="mediaLinkButton">
                 <a href="https://www.linkedin.com/in/bram-prins-8a2371109/" target="_blank">
-                    <img src="resources/linkedIn.png" alt=""></a>
+                    <img src="src/images/linkedIn.png" alt=""></a>
             </div>
             <div class="mediaLinkButton">
                 <a href="https://gitlab.com/Bram_Prins" target="_blank">
-                    <img src="resources/gitlab.png" alt=""></a>
+                    <img src="src/images/gitlab.png" alt=""></a>
             </div>
-        </div> 
+        </div>
+        
+        <div class="footerOverlay"></div>
 
-        <div class="contentEnd"></div>
     </div>
 
     <footer>© 2020 - Bram Prins</footer>
-    
-    <script src="index.js"></script>
-    <noscript>You need to enable JavaScript to view the full site.</noscript>
+
+    <script src="src/home/index.js"></script>
 
 </body>
 </html>

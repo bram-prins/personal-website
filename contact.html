@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/contact/contact.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
+    <div id="content">
+        
         <header>
-            <h1><a href=index.html>Bram Prins</a></h1>
+            <h1><a href=https://www.bram-prins.com>Bram Prins</a></h1>
 
             <nav>
                 <ul class="topMenu">
-                    <li id="home"><a href=index.html>H O M E</a></li>
-                    <li id="myWork"><a href=mywork.html>M Y &nbsp;&nbsp;&nbsp;W O R K</a></li>
-                    <li id="contact" class="active" ><a href=contact.html>C O N T A C T</a></li>
+                    <li id="home"><a href="https://www.bram-prins.com">H O M E</a></li>
+                    <li id="myWork"><a href="mywork">M Y &nbsp;&nbsp;&nbsp;W O R K</a></li>
+                    <li id="contact" class="active" ><a href='#'>C O N T A C T</a></li>
                 </ul>
             </nav>
 
@@ -34,7 +36,7 @@
                     <a class="linkInText" href="mailto:info@bram-prins.com">✉&nbsp;info@bram-prins.com</a>
                 </p>
 
-                <form action="contactform-handler.php" method="post">
+                <form action="src/contact/contactform-handler.php" method="post">
                     <input type="text" name="name" placeholder="Your name.." required>
                     <input type="text" name="email" placeholder="your@email.com" required>
                     <textarea name="message" placeholder="Your message.." required></textarea>
@@ -44,10 +46,13 @@
             </div>
         </div>
         
-        <div class="contentEnd"></div>
+        <div class="footerOverlay"></div>
+
     </div>
 
     <footer>© 2020 - Bram Prins</footer>
+
+    <script src="src/contact/contact.js"></script>
 
 </body>
 </html>    

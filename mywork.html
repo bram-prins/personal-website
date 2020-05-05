@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Prins</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="src/mywork/mywork.css">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Lato|Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content">
+
+    <div id="content">
+        
         <header>
-            <h1><a href=index.html>Bram Prins</a></h1>
+            <h1><a href=https://www.bram-prins.com>Bram Prins</a></h1>
 
             <nav>
                 <ul class="topMenu">
-                    <li id="home"><a href=index.html>H O M E</a></li>
-                    <li id="myWork" class="active"><a href=mywork.html>M Y &nbsp&nbspW O R K</a></li>
-                    <li id="contact"><a href=contact.html>C O N T A C T</a></li>
+                    <li id="home"><a href="https://www.bram-prins.com">H O M E</a></li>
+                    <li id="myWork" class="active"><a href='#'>M Y &nbsp&nbspW O R K</a></li>
+                    <li id="contact"><a href="contact">C O N T A C T</a></li>
                 </ul>
             </nav>
 
@@ -28,84 +31,96 @@
                       
         <div class="h2Container">
             <div class="triangleRight"></div>
-            <img src="resources/DevelopmentProjects.png" alt="" class="h2Icon">  
+            <img src="src/images/DevelopmentProjects.png" alt="" class="h2Icon">  
             <h2>Development Projects</h2>  
         </div>
 
-            <div class="multipleParagraphs">
-                <div class="paragraphBox">
-                    <h3 class=paragraphTitle>DrumDevotion Website</h3>
+        <div class="multipleParagraphs">
+            <div class="paragraphBox">
+                <h3 class=paragraphTitle>DrumDevotion Website</h3>
 
-                    <div class=paragraphContent>
-                        <p class="pMultipleParagraphs">
-                            I am currently working on a website for a drumming course that I wrote a while ago.
-                            <br>
-                            The website will show what the course is all about, and make it all downloadable for free.
-                        </p>
-                        <div style="color:lightslategray; text-align: center;"><br><br>Preview Unavailable</div>
-                    </div>
-                </div>
-
-                <div class="paragraphBox">
-                    <h3 class=paragraphTitle>For fun</h3>
-
-                    <div class=paragraphContent>
-                        <p class="pMultipleParagraphs smallParagraph">
-                            <a href="https://bramprins-weather-app.herokuapp.com/" target="_blank" class="linkInText">
-                                Weather forecast</a>
-                        </p> 
-                    </div>
+                <div class=paragraphContent>
+                    <p class="normal">
+                        I am currently working on a website for a drumming course that I wrote a while ago.
+                        <br>
+                        The website will show what the course is all about, and make it all downloadable for free.
+                    </p>
+                    <div style="color:lightslategray; text-align: center;"><br><br>Preview Unavailable</div>
                 </div>
             </div>
+
+            <div class="paragraphBox">
+                <h3 class=paragraphTitle>For fun</h3>
+
+                <div class=paragraphContent>
+                    <p class="small">
+                        <a href="https://bramprins-weather-app.herokuapp.com/" target="_blank" class="linkInText">
+                            Weather forecast</a>
+                        <br><br>
+                        Games: (in progress)<br>
+                        <ul>
+                            <li><button class="linkInText" onclick="loadGame(1)" disabled>Memory</button></li>
+                            <li><button class="linkInText" onclick="loadGame(2)" disabled>Hangman</button></li>
+                        </ul>
+                    </p> 
+                </div>
+            </div>
+        </div>
 
         <div class="h2Container">
             <div class="triangleRight"></div>
-            <img src="resources/Others.png" alt="" class="h2Icon">  
+            <img src="src/images/Others.png" alt="" class="h2Icon">  
             <h2>Others</h2>  
         </div>
 
-            <div class="multipleParagraphs">
-                <div class="paragraphBox">
-                    <h3 class=paragraphTitle>Studies</h3>
+        <div class="multipleParagraphs">
+            <div class="paragraphBox">
+                <h3 class=paragraphTitle>Studies</h3>
 
-                    <div class=paragraphContent>
-                        <p class="pMultipleParagraphs">
-                            <strong>MSc Marketing</strong><br>
-                            VU University Amsterdam <br>
-                            <br>
-                            During my Marketing master I've learned a lot about businesses and how they function. 
-                            Marketing is a broad field with many different aspects, ranging from market positioning, 
-                            to innovation, to customer satisfaction. I've learned about the role of many of these 
-                            different aspects in how a bussiness can flourish. The thesis I wrote is about how to 
-                            best motivate people to consume sustainably. <br>
-                            <br>
-                            <strong>Ba Communication- & Information Sciences</strong><br>
-                            VU University Amsterdam <br>
-                            <br>
-                            In my bachelor program Communication- and Information Sciences I learned a great deal about 
-                            all kinds of different subjects relating to language, communication, and media. I've 
-                            followed many courses about journalism, advertising, and other forms of communication. 
-                            The thesis I wrote is about news-worthy commenting by bussinesses on social media, and how 
-                            to do this successfully.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="paragraphBox">
-                    <h3 class=paragraphTitle>Hobbies</h3>
-
-                    <div class=paragraphContent>
-                        <p class="pMultipleParagraphs smallParagraph">
-                            In my own time, I also like to play drums:<br><br>
-                            <iframe src="https://www.youtube.com/embed/C8bPGDcvNVQ" frameborder="0"></iframe>
-                        </p>
-                    </div>
+                <div class=paragraphContent>
+                    <p class="normal">
+                        <strong>MSc Marketing</strong><br>
+                        VU University Amsterdam <br>
+                        <br>
+                        During my Marketing master I've learned a lot about businesses and how they function. 
+                        Marketing is a broad field with many different aspects, ranging from market positioning, 
+                        to innovation, to customer satisfaction. I've learned about the role of many of these 
+                        different aspects in how a bussiness can flourish. The thesis I wrote is about how to 
+                        best motivate people to consume sustainably. <br>
+                        <br>
+                        <strong>Ba Communication- & Information Sciences</strong><br>
+                        VU University Amsterdam <br>
+                        <br>
+                        In my bachelor program Communication- and Information Sciences I learned a great deal about 
+                        all kinds of different subjects relating to language, communication, and media. I've 
+                        followed many courses about journalism, advertising, and other forms of communication. 
+                        The thesis I wrote is about news-worthy commenting by bussinesses on social media, and how 
+                        to do this successfully.
+                    </p>
                 </div>
             </div>
-        <div class="contentEnd"></div>
+
+            <div class="paragraphBox">
+                <h3 class=paragraphTitle>Hobbies</h3>
+
+                <div class=paragraphContent>
+                    <p class="small">
+                        In my own time, I also like to play drums:<br><br>
+                        <iframe src="https://www.youtube.com/embed/C8bPGDcvNVQ" frameborder="0"></iframe>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footerOverlay"></div>
+        
     </div>
 
     <footer>© 2020 - Bram Prins</footer>
+
+
+
+    <script src="src/mywork/mywork.js"></script>
 
 </body>
 </html>    
