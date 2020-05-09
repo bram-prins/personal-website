@@ -1,12 +1,22 @@
 //Shuffle cards in random order
 const getShuffledCards = () => {
-    let arr = []
-    for (let i = 1; i < 11; i ++) {
-        arr.push(i)
-        arr.push(i)
+    const arr1 = shuffle([1,2,3,4,5,6,7,8,9,10])
+    const arr2 = shuffle([1,2,3,4,5,6,7,8,9,10])
+    const finalArray = shuffle(arr1.concat(arr2))
+
+    //shuffle
+    function shuffle (array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * i)
+            const temp = array[i]
+            array[i] = array[j]
+            array[j] = temp
+        }
+    
+        return array
     }
 
-    return arr.sort(() => Math.random() - 0.5)
+    return finalArray
 }
 
 let shuffledCards
@@ -73,7 +83,7 @@ const turnCard = (i) => {
                 let playAgain = document.createElement('button')
                 playAgain.className='generalButton'
                 playAgain.innerHTML = 'Play Again'
-                playAgain.onclick = loadBoard
+                playAgain.addEventListener('click', loadBoard)
 
                 memory.appendChild(gg)
                 memory.appendChild(playAgain)

@@ -1,6 +1,6 @@
 //scaling
 const scale = () => {
-    const width = Math.min(screen.width, window.innerWidth)
+    const width = Math.min(window.innerWidth, window.outerWidth)
     const content = document.getElementById('content')
     
     if (width < 792 && width > 711) {

@@ -127,7 +127,6 @@ button.linkInText {
 
 
 /* game window */
-
 .game-window {
     display: none;
     width: 470px;
@@ -143,22 +142,12 @@ button.linkInText {
 .game-window.active {
     display: flex;
     flex-direction: column;
-}
 
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    pointer-events: none;
-}
-
-.overlay.active {
-    display: inline;
-    pointer-events: all;
+    /* For Internet Explorer */ 
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, .3); 
+    
+    /* For other browsers */ 
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3); 
 }
 
 .game-header {
@@ -189,7 +178,7 @@ button.linkInText {
     padding: 35px;
     box-sizing: border-box;
     background-color: white;
-    flex-grow: 100;
+    flex-grow: 1;
 }
 
 .game-body iframe {
