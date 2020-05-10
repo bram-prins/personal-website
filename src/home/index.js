@@ -4,20 +4,20 @@ const scale = () => {
     const content = document.getElementById('content')
     
     if (width < 792 && width > 711) {
-        scaler(792, 974)
+        scaler(792)
     } else if (width < 368) {
-        scaler(368, 1506)
+        scaler(368)
     } else {
         content.removeAttribute('style')
         document.body.removeAttribute('style')
     }
 
-    function scaler(contentWidth, contentHeight) {
+    function scaler(contentWidth) {
         const scl = width / contentWidth
         content.style.width = contentWidth + "px"
         content.style.transform = "scale(" + scl + ")"
         content.style.transformOrigin = "left top"
-        document.body.style.height = (contentHeight * scl) + "px"
+        document.body.style.height = (content.offsetHeight * scl) + "px"
     }
 }
 

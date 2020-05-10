@@ -21,12 +21,19 @@ const getShuffledCards = () => {
 
 let shuffledCards
 
-//Load board
+//Play game
 const memory = document.querySelector('.memory')
+
+let progress = 0
+let turnedCards = []
 
 const loadBoard = () => {
     memory.innerHTML = ''
-    memory.classList.remove('done')
+    progress = 0
+
+    if (memory.classList.contains('done')) {
+        memory.classList.remove('done')
+    }
 
     for (let i = 0; i < 20; i ++) {
         let button = document.createElement('button')
@@ -40,10 +47,6 @@ const loadBoard = () => {
     shuffledCards = getShuffledCards()
 }
 loadBoard()
-
-//Play game
-let progress = 0
-let turnedCards = []
 
 const turnCard = (i) => {
     let card = document.getElementById('c' + i)
@@ -87,8 +90,6 @@ const turnCard = (i) => {
 
                 memory.appendChild(gg)
                 memory.appendChild(playAgain)
-
-                progress = 0
             }
         }, 1650)
 

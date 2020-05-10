@@ -67,6 +67,8 @@ button.linkInText {
 
 
 
+
+
 /* smaller screens */
 
 @media screen and (max-width: 1110px) {
@@ -155,6 +157,7 @@ button.linkInText {
     background-color: darkslategray;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .game-header h3 {
@@ -162,9 +165,11 @@ button.linkInText {
 }
 
 .game-header button {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
+    max-width: 1.3em;
+    max-height: 1.4em;
     background-color: white;
     border: none;
     outline: none;

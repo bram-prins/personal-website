@@ -7,7 +7,7 @@ const scale = () => {
         content.style.width = 368 + "px"
         content.style.transform = "scale(" + scl + ")"
         content.style.transformOrigin = "left top"
-        document.body.style.height = (843 * scl) + "px"
+        document.body.style.height = (content.offsetHeight * scl) + "px"
     } else {
         content.removeAttribute('style')
         document.body.removeAttribute('style')
