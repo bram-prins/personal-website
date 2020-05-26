@@ -1,5 +1,7 @@
-# mod_rewrite starts here
+#Custom default index page
+DirectoryIndex home.html
 
+# mod_rewrite starts here
 RewriteEngine on
 
 # does not apply to existing directories

@@ -52,6 +52,10 @@
     background: hsla(0, 0%, 100%, 1.0);
 }
 
+.spaceUnderParagraphTitle {
+    height: 32px;
+}
+
 #introduction {
     margin-bottom: 30px;
 }
@@ -100,6 +104,12 @@
 
 
 
+
+@media screen and (max-width: 993px) {
+    .spaceUnderParagraphTitle {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 890px) {
     #imageSlider {

@@ -25,11 +25,6 @@ scale()
 window.onresize = scale
 
 
-//age
-let age = ((new Date() - new Date("18 February 1996")) / 31536000000).toFixed(0);  //31536000000 = seconds in a year
-document.getElementById('age').innerHTML = age
-
-
 //image slider
 const slider = document.getElementById('imgCnt1')
 let img = 1
