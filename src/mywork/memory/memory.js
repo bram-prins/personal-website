@@ -31,10 +31,6 @@ const loadBoard = () => {
     memory.innerHTML = ''
     progress = 0
 
-    if (memory.classList.contains('done')) {
-        memory.classList.remove('done')
-    }
-
     for (let i = 0; i < 20; i ++) {
         let button = document.createElement('button')
         button.id = 'c' + i
@@ -50,12 +46,13 @@ loadBoard()
 
 const turnCard = (i) => {
     let card = document.getElementById('c' + i)
-    card.style.backgroundImage = 'url(\"../../images/memory-images/card' + shuffledCards[i] + '.png\")'
+
+    card.style.backgroundImage = 'var(--card' + shuffledCards[i] + ')'
     card.style.backgroundColor = 'white'
     card.style.backgroundSize = 'contain'
-    
     turnedCards.push(i)
-    
+   
+   
     if (turnedCards.length === 2) {
         memory.style.pointerEvents = 'none'
 
@@ -77,19 +74,14 @@ const turnCard = (i) => {
             }
 
             if (progress === 10) {
-                memory.innerHTML = ''
                 memory.classList.add('done')
+                memory.innerHTML = 'gg'
 
-                let gg = document.createElement('p')
-                gg.innerHTML = 'gg'
-
-                let playAgain = document.createElement('button')
-                playAgain.className='generalButton'
-                playAgain.innerHTML = 'Play Again'
-                playAgain.addEventListener('click', loadBoard)
-
-                memory.appendChild(gg)
-                memory.appendChild(playAgain)
+                setTimeout(() => {
+                    if (confirm ('Well played.\nWould you like to play again?')) window.location.reload()
+                    else window.parent.window.document.getElementById('closeBtn').click()
+                    memory.classList.remove('done')
+                }, 200)
             }
         }, 1650)
 

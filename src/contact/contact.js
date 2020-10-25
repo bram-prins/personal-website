@@ -8,7 +8,7 @@ const scale = () => {
         content.style.transform = "scale(" + scl + ")"
         content.style.transformOrigin = "left top"
         document.body.style.height = (content.offsetHeight * scl) + "px"
-    } else {
+    } else if (content.hasAttribute('style')) {
         content.removeAttribute('style')
         document.body.removeAttribute('style')
     }

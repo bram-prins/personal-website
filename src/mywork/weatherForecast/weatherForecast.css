@@ -1,0 +1,28 @@
+form * {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+input[type=text] {
+    width: 69%;
+    padding: 12px;
+    margin: 2% 1% 2% 2%;
+    border: 1px solid darkslategray;
+}
+button {
+    width: 23%;
+    margin: 2% 2% 2% 1%;
+}
+ul {
+    margin-top: 2px;
+    padding-left: 20px;
+}
+p {
+    margin: 2%;
+}
+
+@media screen and (max-width: 320px) {
+    form *, p {
+        font-size: 11px !important;
+    }
+}

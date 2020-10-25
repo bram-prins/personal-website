@@ -7,7 +7,7 @@ const scale = () => {
         scaler(792)
     } else if (width < 368) {
         scaler(368)
-    } else {
+    } else if (content.hasAttribute('style')) {
         content.removeAttribute('style')
         document.body.removeAttribute('style')
     }

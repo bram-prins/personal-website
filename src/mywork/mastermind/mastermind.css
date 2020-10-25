@@ -1,0 +1,120 @@
+body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mastermind {
+    background-color: rgb(242, 242, 242);
+    padding: 4px;
+}
+
+.gameRow {
+    display: flex;
+}
+
+.gameRow.answer {
+    margin-bottom: 6px;
+}
+
+.gameRow.guess {
+    margin-bottom: 2px;
+}
+
+.gameRow.panel {
+    margin-top: 6px;
+}
+
+.gameRow .balls, .gameRow .side, .gameRow.panel {
+    border: 1px solid grey;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.gameRow .balls {
+    padding: 0 8px;
+}
+
+.gameRow.panel {
+    width: 324px;
+    padding-left: 4px;
+}
+
+.gameRow .side {
+    width: 128px;
+    margin-left: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.gameRow.answer .side {
+    background-color: darkslategrey;
+    color: white;
+    flex-direction: column;
+    padding-bottom: 3px;
+}
+.gameRow.answer .side span:first-child { font-size: 12px; }
+.gameRow.answer .side span:last-child { font-size: 9px; }
+.gameRow.guess .side span:first-child { color: green; }
+.gameRow.guess .side span:nth-child(3) { color: royalblue; }
+.gameRow.guess .side span:nth-child(5) { color: red; }
+
+.ball {
+    width: 32px;
+    height: 32px;
+    background: radial-gradient(circle at 30% 30%, white, rgb(70, 70, 70));
+    box-shadow: 0.15em 0.15em 0.15em #444444;
+    border-radius: 50%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 32px;
+    margin: 5px 6px 7px 6px;
+}
+
+.ball.empty {
+    background: white;
+    transform: scale(0.6);
+    box-shadow: 3px 3px 3px #444444 inset;
+}
+
+.ball.green { background: radial-gradient(circle at 30% 30%,rgb(114, 223, 114), rgb(50, 50, 50)); }
+.ball.red { background: radial-gradient(circle at 30% 30%,rgb(255, 97, 97), rgb(50, 50, 50)); }
+.ball.blue { background: radial-gradient(circle at 30% 30%,rgb(117, 162, 245), rgb(50, 50, 50)); }
+.ball.yellow { background: radial-gradient(circle at 30% 30%,rgb(255, 255, 105), rgb(50, 50, 50)); }
+.ball.orange { background: radial-gradient(circle at 30% 30%,rgb(255, 156, 36), rgb(50, 50, 50)); }
+.ball.purple { background: radial-gradient(circle at 30% 30%, rgb(224, 122, 224), rgb(50, 50, 50)); }
+
+.gameRow.panel .ball {
+    margin: 5px 3px 6px 3px;
+    cursor: pointer;
+}
+
+.gameRow.panel button {
+    width: 32px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0;
+    margin: 2px;
+    flex-grow: 1;
+}
+
+.gameRow.panel .ball:hover {
+    filter: brightness(85%);
+}
+
+.gameRow.panel button:first-of-type {
+    margin: 2px 0 2px 6px;
+    padding-bottom: 1px;
+    font-size: 22px;
+}
+
+
+
+/*
+- memory cards draaien; getallen in mastermind draaien;
+- weather forecast;
+*/

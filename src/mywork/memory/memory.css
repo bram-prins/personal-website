@@ -1,5 +1,17 @@
+:root {
+    --card1: url(../../images/memory-images/card1.png);
+    --card2: url(../../images/memory-images/card2.png);
+    --card3: url(../../images/memory-images/card3.png);
+    --card4: url(../../images/memory-images/card4.png);
+    --card5: url(../../images/memory-images/card5.png);
+    --card6: url(../../images/memory-images/card6.png);
+    --card7: url(../../images/memory-images/card7.png);
+    --card8: url(../../images/memory-images/card8.png);
+    --card9: url(../../images/memory-images/card9.png);
+    --card10: url(../../images/memory-images/card10.png);
+}
+  
 body {
-    background-color: white;
     position: relative;
 }
 
@@ -29,12 +41,11 @@ body {
 }
 
 .memory.done {
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .memory .generalButton {
-    width: 30%;
+    width: 50%;
     margin-top: 30px;
 }

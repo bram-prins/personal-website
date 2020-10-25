@@ -30,13 +30,7 @@
     margin: 0 13px;
 }
 
-p.normal {
-    min-width: 288px;
-    max-width: 400px;
-}
-
-p.small, p.small-centered {
-    min-width: 288px;
+.paragraphCard .paragraphContent p {
     width: 400px;
 }
 
@@ -65,6 +59,10 @@ button.linkInText {
     font-size: 16px;
 }
 
+button.linkInText:first-of-type {
+    padding: 0;
+}
+
 
 .in-progress {
     color: rgb(131, 131, 131)
@@ -83,7 +81,7 @@ button.linkInText {
 }
 
 @media screen and (max-width: 1035px) {
-    p.small {
+    .paragraphCard .paragraphContent p {
         width: calc(50vw - 118px);
     }
 }
@@ -99,13 +97,13 @@ button.linkInText {
         margin: 0 35px 40px 35px;
     }
 
-    p.small, p.small-centered {
+    .paragraphCard .paragraphContent p {
         width: 400px;
     }
 }
 
 @media screen and (max-width: 540px) {
-    p.small, p.small-centered {
+    .paragraphCard .paragraphContent p {
         width: calc(100vw - 140px);
     }
 
@@ -123,7 +121,7 @@ button.linkInText {
         margin: 0 20px 40px 20px;
     }
 
-    p.small, p.small-centered {
+    .paragraphCard .paragraphContent p {
         width: 288px;
     }
 }

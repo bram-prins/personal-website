@@ -37,11 +37,11 @@
         </div>
 
         <div class="multipleParagraphs">
-            <div class="paragraphBox">
+            <div class="paragraphBox paragraphCard">
                 <h3 class=paragraphTitle>DrumDevotion Website</h3>
 
                 <div class=paragraphContent>
-                    <p class="normal">
+                    <p>
                         I am currently working on a website for a drumming course that I wrote.
                         <br>
                         The website will show what the course is all about, make it downloadable for free,
@@ -53,18 +53,16 @@
                 </div>
             </div>
 
-            <div class="paragraphBox">
+            <div class="paragraphBox paragraphCard">
                 <h3 class=paragraphTitle>For fun</h3>
 
                 <div class=paragraphContent>
-                    <p class="small">
-                        <a href="https://bramprins-weather-app.herokuapp.com/" target="_blank" class="linkInText">
-                            Weather forecast</a>
-                        <br><br>
+                    <p>
+                        <button class="linkInText" onclick="loadGameWindow(3)">Weather forecast</button><br><br>
                         Games:<br>
                         <ul>
-                            <li><button class="linkInText" onclick="loadGame(1)">Memory</button></li>
-                            <!--<li><button class="linkInText" onclick="loadGame(2)">Hangman</button></li>-->
+                            <li><button class="linkInText" onclick="loadGameWindow(1)">Memory</button></li>
+                            <li><button class="linkInText" onclick="loadGameWindow(2)">Mastermind</button></li>
                         </ul>
                     </p> 
                 </div>
@@ -78,11 +76,11 @@
         </div>
 
         <div class="multipleParagraphs">
-            <div class="paragraphBox">
+            <div class="paragraphBox paragraphCard">
                 <h3 class=paragraphTitle>Work experience</h3>
 
                 <div class=paragraphContent>
-                    <p class="normal">
+                    <p>
                         <strong>TalentClass Traineeship</strong><br>
                         Qquest - Gouda<br>
                         <br>
@@ -104,11 +102,11 @@
                 </div>
             </div>
 
-            <div class="paragraphBox">
+            <div class="paragraphBox paragraphCard">
                 <h3 class=paragraphTitle>Studies</h3>
 
                 <div class=paragraphContent>
-                    <p class="normal">
+                    <p>
                         <strong>MSc Marketing</strong><br>
                         VU University Amsterdam <br>
                         <br>
@@ -135,11 +133,11 @@
             <h2>Others</h2>  
         </div>
 
-        <div class="paragraphBox">
+        <div class="paragraphBox paragraphCard">
             <h3 class=paragraphTitle>Hobbies</h3>
 
             <div class=paragraphContent>
-                <p class="small-centered">
+                <p>
                     In my own time, I also like to play drums:<br><br>
                     <iframe src="https://www.youtube.com/embed/C8bPGDcvNVQ" frameborder="0"></iframe>
                 </p>
@@ -156,8 +154,8 @@
 
     <div class="game-window">
         <div class="game-header">
-            <h3 id="game-title">Memory</h3>
-            <button onclick="closeWin()">&times;</button>
+            <h3 id="game-title"></h3>
+            <button id="closeBtn" onclick="closeWin()">&times;</button>
         </div>
         <div class="game-body">
             <iframe></iframe>
