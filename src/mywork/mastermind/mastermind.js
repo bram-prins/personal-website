@@ -72,30 +72,35 @@ go.onclick = async () => {
     const ready = !gameRowBalls[attemptsLeft].children[3].classList.contains('empty')
 
     //check with the answer
-    let bufferAnswer = answer.map(color => color)
     if (ready) {
-        //First, check the ones that are correct (color + place)
         let right = 0
+        let wrongPlace = 0
+        let wrong = 0
+        let bufferAnswer = answer.map(color => color)
+
+        //First, check the ones that are correct (color + place)
         attempt.forEach((color, i) => {
-            if (color === bufferAnswer[i]) {
+            if (color === answer[i]) {
                 right++
-                bufferAnswer.splice(i, 1, '-')
+                bufferAnswer[i] = false
             }
         })
+
         //Second, check the right colors at the wrong place
-        let wrongPlace = 0
         attempt.forEach((color, i) => {
-            if (color !== bufferAnswer[i] && bufferAnswer.includes(color)) {
+            if (color !== answer[i] && bufferAnswer.includes(color)) {
                 wrongPlace++
-                bufferAnswer.splice(bufferAnswer.findIndex(answerColor => answerColor === color), 1, '-')
+                bufferAnswer[bufferAnswer.findIndex(e => e === color)] = false
             }
         })
 
         //The rest must be wrong color + wrong place.
+        wrong = 4 - right - wrongPlace
+
         //Fill in the result on the side of the guess row
         gameRowSides[attemptsLeft].children[1].innerHTML = right
         gameRowSides[attemptsLeft].children[3].innerHTML = wrongPlace
-        gameRowSides[attemptsLeft].children[5].innerHTML = 4 - right - wrongPlace
+        gameRowSides[attemptsLeft].children[5].innerHTML = wrong
 
         //If they got it right, end the game (true = game is won)
         if (right === 4) {
@@ -113,8 +118,7 @@ go.onclick = async () => {
 
             gameRowBalls[attemptsLeft].style.backgroundColor = bgColor
             gameRowSides[attemptsLeft].style.backgroundColor = bgColor
-        }
-
+        } 
     } else {
         alert('Not yet ready')
     }

@@ -79,7 +79,7 @@ const turnCard = (i) => {
 
                 setTimeout(() => {
                     if (confirm ('Well played.\nWould you like to play again?')) window.location.reload()
-                    else window.parent.window.document.getElementById('closeBtn').click()
+                    else window.parent.document.getElementById('closeBtn').click()
                     memory.classList.remove('done')
                 }, 200)
             }

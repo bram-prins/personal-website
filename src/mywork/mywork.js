@@ -1,6 +1,6 @@
 //scaler
+const content = document.getElementById('content')
 const scale = () => {
-    const content = document.getElementById('content')
     const video = document.querySelector('iframe')
     video.style.height = (video.offsetWidth / 2) + 'px'
 
@@ -26,6 +26,7 @@ const wind = document.querySelector(".game-window")
 
 const loadGameWindow = (no) => {
     wind.classList.add('active')
+    content.classList.add('background')
     const title = document.getElementById('game-title')
     const frame = document.querySelector('.game-body iframe')
 
@@ -48,6 +49,7 @@ const loadGameWindow = (no) => {
 
 const closeWin = () => {
     wind.classList.remove('active')
+    content.classList.remove('background')
 }
 
 

@@ -68,6 +68,10 @@ button.linkInText:first-of-type {
     color: rgb(131, 131, 131)
 }
 
+#content.background {
+    pointer-events: none;
+}
+
 
 
 
