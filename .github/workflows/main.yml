@@ -17,4 +17,4 @@ jobs:
         server: ftp.bram-prins.com
         username: brampri1
         password: ${{ secrets.ftp_pw }}
-        local-dir: /home/brampri1/public_html/bram-prins.com/
+        server-dir: public_html/bram-prins.com/
