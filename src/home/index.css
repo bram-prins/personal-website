@@ -53,7 +53,7 @@
 }
 
 .spaceUnderParagraphTitle {
-    height: 32px;
+    height: 64px;
 }
 
 #introduction {
@@ -105,13 +105,13 @@
 
 
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 925px) {
     .spaceUnderParagraphTitle {
         display: none;
     }
 }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 711px) {
     #imageSlider {
         margin-bottom: 20px;
     }

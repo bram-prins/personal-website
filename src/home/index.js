@@ -3,8 +3,8 @@ const scale = () => {
     const width = Math.min(window.innerWidth, window.outerWidth)
     const content = document.getElementById('content')
     
-    if (width < 792 && width > 711) {
-        scaler(792)
+    if (width < 652 && width > 617) {
+        scaler(652)
     } else if (width < 368) {
         scaler(368)
     } else if (content.hasAttribute('style')) {
