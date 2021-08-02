@@ -11,11 +11,14 @@ form.onsubmit = async e => {
 
     try {
         let location = input.value
+        
+        //Obfuscated apiKey
+        var _0xd826=["\x70\x6B\x2E\x65\x79\x4A\x31\x49\x6A\x6F\x69\x59\x6E\x4A\x68\x62\x58\x6F\x77\x63\x69\x49\x73\x49\x6D\x45\x69\x4F\x69\x4A\x6A\x61\x7A\x68\x68\x4D\x47\x6B\x30\x64\x7A\x45\x77\x59\x6E\x56\x72\x4D\x32\x68\x77\x61\x32\x68\x74\x4F\x58\x46\x68\x4D\x44\x52\x73\x49\x6E\x30\x2E\x6F\x5A\x68\x38\x36\x6C\x57\x49\x55\x47\x6D\x7A\x49\x63\x37\x6E\x4A\x39\x48\x39\x46\x67"]
+        const apiKey=_0xd826[Math.floor(Math.random())]
 
         //Get latitude & longitude of searched location
-        const urlLL = 'https://api.mapbox.com/geocoding/v5/mapbox.places/' + 
-            encodeURIComponent(location) +
-            '.json?limit=1&access_token=pk.eyJ1IjoiYnJhbXowciIsImEiOiJjazhhMGk0dzEwYnVrM2hwa2htOXFhMDRsIn0.oZh86lWIUGmzIc7nJ9H9Fg'    
+        const urlLL = 
+            `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(location)}.json?limit=1&access_token=${apiKey}`    
         const rawDataLL = await fetch(urlLL)
         const dataLL = await rawDataLL.json()
         if (dataLL.error) throw new Error(dataLL.error)
