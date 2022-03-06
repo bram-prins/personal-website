@@ -18,3 +18,4 @@ jobs:
         username: brampri1
         password: ${{ secrets.ftp_pw }}
         server-dir: public_html/bram-prins.com/
+        protocol: ftps
