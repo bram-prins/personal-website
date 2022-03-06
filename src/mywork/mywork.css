@@ -30,7 +30,7 @@
     margin: 0 13px;
 }
 
-.paragraphCard .paragraphContent p {
+.paragraphCard .paragraphContent p, .paragraphCard .paragraphContent div {
     width: 400px;
 }
 
