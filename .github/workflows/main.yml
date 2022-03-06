@@ -14,7 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: ftp.bram-prins.com
+        server: ftpes://ftp.bram-prins.com
         username: brampri1
         password: ${{ secrets.ftp_pw }}
         server-dir: public_html/bram-prins.com/
