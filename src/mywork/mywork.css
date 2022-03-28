@@ -3,16 +3,16 @@
     align-items: center;
     height: 100px;
     width: 1060px;
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(245, 245, 245);
     margin: 15px 0 25px 0;
-    background-image: linear-gradient(to right, rgb(184, 184, 184), rgb(242, 242, 242));
+    background-image: linear-gradient(to right, rgb(184, 184, 184), rgb(245, 245, 245));
 }
 
 .triangleRight {
     width: 0;
 	height: 0;
 	border-top: 50px solid transparent;
-	border-left: 50px solid rgb(242, 242, 242);
+	border-left: 50px solid rgb(245, 245, 245);
 	border-bottom: 50px solid transparent;
 }
 
@@ -85,7 +85,7 @@ button.linkInText:first-of-type {
 }
 
 @media screen and (max-width: 1035px) {
-    .paragraphCard .paragraphContent p {
+    .paragraphCard .paragraphContent p, .paragraphCard .paragraphContent div {
         width: calc(50vw - 118px);
     }
 }
@@ -101,13 +101,13 @@ button.linkInText:first-of-type {
         margin: 0 35px 40px 35px;
     }
 
-    .paragraphCard .paragraphContent p {
+    .paragraphCard .paragraphContent p, .paragraphCard .paragraphContent div {
         width: 400px;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .paragraphCard .paragraphContent p {
+    .paragraphCard .paragraphContent p, .paragraphCard .paragraphContent div {
         width: calc(100vw - 140px);
     }
 
@@ -125,7 +125,7 @@ button.linkInText:first-of-type {
         margin: 0 20px 40px 20px;
     }
 
-    .paragraphCard .paragraphContent p {
+    .paragraphCard .paragraphContent p, .paragraphCard .paragraphContent div {
         width: 288px;
     }
 }
@@ -141,8 +141,8 @@ button.linkInText:first-of-type {
     max-width: 90vw;
     height: fit-content;
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 48%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -160,7 +160,7 @@ button.linkInText:first-of-type {
 
 .game-header {
     padding: 28px 35px;
-    background-color: darkslategray;
+    background-color: black;
     display: flex;
     justify-content: center;
     position: relative;

@@ -50,8 +50,8 @@ const turnCard = (i) => {
     card.style.backgroundImage = 'var(--card' + shuffledCards[i] + ')'
     card.style.backgroundColor = 'white'
     card.style.backgroundSize = 'contain'
+    card.disabled = true
     turnedCards.push(i)
-   
    
     if (turnedCards.length === 2) {
         memory.style.pointerEvents = 'none'
@@ -71,6 +71,10 @@ const turnCard = (i) => {
             if (correct) {
                 prevCard.style.visibility = 'hidden'
                 card.style.visibility = 'hidden'
+            }
+            else {
+                prevCard.disabled = false
+                card.disabled = false
             }
 
             if (progress === 10) {

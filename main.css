@@ -9,11 +9,11 @@ body {
     padding: 0;
     position: relative;
     font-family: 'Lato', sans-serif;
-    background-color: rgb(242, 242, 242)
+    background-color: rgb(245, 245, 245)
 }
 
 header {
-    background-color: darkslategray;
+    background-color: black;
     width: 100%;
 }
 
@@ -21,7 +21,7 @@ h1 {
     font-family: 'Cookie', cursive;
     font-size: 65px;
     font-weight: normal;
-    color: rgb(242, 242, 242);
+    color: rgb(245, 245, 245);
     text-align: center;
     margin: 0px;
     padding: 25px;
@@ -34,7 +34,7 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: bold;
-    color: darkslategray;
+    color: black;
 }
 
 h3 {
@@ -43,7 +43,7 @@ h3 {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 24px;
-    color: darkslategray;
+    color: black;
 }
 
 p {
@@ -71,12 +71,12 @@ button {
 .generalButton {
     padding: 12px;
     font-size: 16px;
-    background-color: darkslategray;
+    background-color: black;
     color: white;
 }
 
 .generalButton:hover {
-    filter: brightness(85%);
+    background-color: rgb(70, 70, 70);
 }
 
 #content {
@@ -105,8 +105,8 @@ button {
 }
 
 .topMenu li.active {
-    color: darkslategray;
-    background-color: rgb(242, 242, 242);
+    color: black;
+    background-color: rgb(245, 245, 245);
 }
 
 .spaceUnderHeader {
@@ -130,7 +130,7 @@ button {
 .paragraphTitle {
     padding: 28px 35px 25px 35px;
     text-align: center;
-    border-bottom: 4px solid darkslategray;
+    border-bottom: 4px solid black;
 }
 
 .paragraphContent {
@@ -160,7 +160,7 @@ button {
     padding-left: 35px;
     box-sizing: border-box;
     color: white;
-    background-color: darkslategray;
+    background-color: black;
     position: absolute;
     bottom: 0;
 }

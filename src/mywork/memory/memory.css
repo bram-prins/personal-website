@@ -33,7 +33,7 @@ body {
     visibility: visible;
     cursor: pointer;
     border-radius: 5px;
-    background-color: darkslategray;
+    background-color: black;
     background-image: url('../../images/favicon.png');
     background-size: 50% 50%;
     background-position: center;

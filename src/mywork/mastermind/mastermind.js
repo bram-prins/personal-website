@@ -40,7 +40,7 @@ let answer = []
 for (let i = 0; i < 4; i++) answer.push(colors[Math.floor(Math.random() * 6)])
 
 //color current guess row lightgreen
-const bgColor = 'rgb(224, 241, 235)'
+const bgColor = 'rgb(225, 225, 225)'
 gameRowBalls[7].style.backgroundColor = bgColor
 gameRowSides[7].style.backgroundColor = bgColor
 
