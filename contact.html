@@ -37,7 +37,7 @@
                     <a class="linkInText" href="mailto:info@bram-prins.com">✉&nbsp;info@bram-prins.com</a>
                 </p>
 
-                <form action="src/contact/contactform-handler.php" method="post">
+                <form onsubmit="return checkForm()" action="src/contact/contactform-handler.php" method="post">
                     <input type="text" name="name" placeholder="Your name.." required>
                     <input type="text" name="email" placeholder="your@email.com" required>
                     <textarea name="message" placeholder="Your message.." required></textarea>

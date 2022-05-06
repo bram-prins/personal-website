@@ -16,3 +16,25 @@ const scale = () => {
 
 scale()
 window.onresize = scale
+
+// contact form response
+const params = new URLSearchParams(document.location.search);
+if (params.has('resp')) {
+    const resp = params.get('resp')
+    if (resp === 'ok')
+        alert("Thank you, your message was submitted succesfully")
+    else if (resp === 'err-1')
+        alert("Submission failed: a url was detected")
+}
+
+const checkForm = () => {
+    //check if there is a url in the message
+    const regex = new RegExp(/\w\.\w/i)
+    const text = document.querySelector('textarea').value
+    if (regex.test(text)) {
+        alert ("URL's are not permitted, please try again")
+        return false
+    } else {
+        return true
+    }
+}
