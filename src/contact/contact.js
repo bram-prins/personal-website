@@ -24,7 +24,7 @@ if (params.has('resp')) {
     if (resp === 'ok')
         alert("Thank you, your message was submitted succesfully")
     else if (resp === 'err-1')
-        alert("Submission failed: a url was detected")
+        alert("Submission failed: a link was detected")
 }
 
 const checkForm = () => {
@@ -32,7 +32,7 @@ const checkForm = () => {
     const regex = new RegExp(/\w\.\w/i)
     const text = document.querySelector('textarea').value
     if (regex.test(text)) {
-        alert ("URL's are not permitted, please try again")
+        alert ("Links are not permitted, please try again")
         return false
     } else {
         return true
