@@ -14,7 +14,7 @@
         // Filter for spam
         if (preg_match('/\w\.\w/i', $message)) {
             header(http_response_code(406));
-            echo '<p>Submission failed: a link was detected</p>';
+            echo '<p>Submission failed: links are not allowed</p>';
             redirect("../../contact.html?resp=err-1");
         } elseif (preg_match('/cryptaxbot/i', $message)) {
             header(http_response_code(406));

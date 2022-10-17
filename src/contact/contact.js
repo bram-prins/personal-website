@@ -30,20 +30,8 @@ window.onload = async () => {
         if (resp === 'ok')
             delayedAlert("Thank you, your message was submitted succesfully")
         else if (resp === 'err-1')
-            delayedAlert("Submission failed: a link was detected")
+            delayedAlert("Submission failed: links are not allowed")
         else if (resp === 'err-2')
             delayedAlert("Submission failed: content detected that is marked as spam")
-    }
-}
-
-const checkForm = () => {
-    //check if there is a url in the message
-    const regex1 = new RegExp(/\w\.\w/i)
-    const text = document.querySelector('textarea').value
-    if (regex.test(text)) {
-        alert ("Links are not permitted, please try again")
-        return false
-    } else {
-        return true
     }
 }
