@@ -17,19 +17,28 @@ const scale = () => {
 scale()
 window.onresize = scale
 
-// contact form response
-const params = new URLSearchParams(document.location.search);
-if (params.has('resp')) {
-    const resp = params.get('resp')
-    if (resp === 'ok')
-        alert("Thank you, your message was submitted succesfully")
-    else if (resp === 'err-1')
-        alert("Submission failed: a link was detected")
+const delayedAlert = async input => {
+    await new Promise(r => setTimeout(r, 100))
+    alert(input)
+}
+
+window.onload = async () => {
+    // contact form response
+    const params = new URLSearchParams(document.location.search);
+    if (params.has('resp')) {
+        const resp = params.get('resp')
+        if (resp === 'ok')
+            delayedAlert("Thank you, your message was submitted succesfully")
+        else if (resp === 'err-1')
+            delayedAlert("Submission failed: a link was detected")
+        else if (resp === 'err-2')
+            delayedAlert("Submission failed: content detected that is marked as spam")
+    }
 }
 
 const checkForm = () => {
     //check if there is a url in the message
-    const regex = new RegExp(/\w\.\w/i)
+    const regex1 = new RegExp(/\w\.\w/i)
     const text = document.querySelector('textarea').value
     if (regex.test(text)) {
         alert ("Links are not permitted, please try again")

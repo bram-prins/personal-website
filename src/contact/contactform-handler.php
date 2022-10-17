@@ -1,13 +1,25 @@
 <?php
 
+    function redirect($url)
+    {
+        echo '<script type="text/javascript">window.location = "' . $url . '";</script>';
+    }
+
     if (isset($_POST['submit'])) {
         
         $name = $_POST['name'];
         $mailFrom = $_POST['email'];
         $message = $_POST['message'];
 
-        if(preg_match('/\w\.\w/i', $message)) {
-            header("Location: ..\..\contact.html?resp=err-1");
+        // Filter for spam
+        if (preg_match('/\w\.\w/i', $message)) {
+            header(http_response_code(406));
+            echo '<p>Submission failed: a link was detected</p>';
+            redirect("../../contact.html?resp=err-1");
+        } elseif (preg_match('/cryptaxbot/i', $message)) {
+            header(http_response_code(406));
+            echo '<p>Submission failed: content detected that is marked as spam</p>';
+            redirect("../../contact.html?resp=err-2");
         } else {
             $mailTo = "info@bram-prins.com";
             $subject = "New bram-prins.com Contact-form Submission From: $name";
@@ -15,7 +27,10 @@
             $mailHeader = "From: $mailFrom";
 
             mail($mailTo, $subject, $txt, $mailHeader);
-            header("Location: ..\..\contact.html?resp=ok");
+
+            header(http_response_code(200));
+            echo '<p>Thank you, your message was submitted succesfully</p>';
+            redirect("../../contact.html?resp=ok");
         }
     }
 

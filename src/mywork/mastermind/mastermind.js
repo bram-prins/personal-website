@@ -39,7 +39,7 @@ let answer = []
 //generate a random answer (with replacement, as multiple instances of the same color are possible in the game)
 for (let i = 0; i < 4; i++) answer.push(colors[Math.floor(Math.random() * 6)])
 
-//color current guess row lightgreen
+//color current guess row light gray
 const bgColor = 'rgb(225, 225, 225)'
 gameRowBalls[7].style.backgroundColor = bgColor
 gameRowSides[7].style.backgroundColor = bgColor
@@ -136,7 +136,7 @@ const ballClick = (color) => {
         gameRowBalls[attemptsLeft].children[attempt.length].className = "ball " + color
         attempt.push(color)
     }
-    else alert('You have to run this attempt before going on the next')
+    else alert('You have to run this attempt before going onto the next')
 }
 ballButtons[0].onclick = () => ballClick(colors[0])
 ballButtons[1].onclick = () => ballClick(colors[1])
